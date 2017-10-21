@@ -18,10 +18,10 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "watch": "webpack --config webpack.dev.js --watch",
-    "test": "mocha-webpack 'test/**/*.js'",
-    "testwatch": "mocha-webpack --watch 'test/**/*.js'",
-    "coverage": "nyc --reporter=text mocha-webpack 'test/**/*.js'",
-    "coverage:html": "nyc --reporter=html mocha-webpack 'test/**/*.js'"
+    "test": "webpack --config webpack.test.js; mocha 'test/**/*.js'",
+    "testwatch": "webpack --config webpack.test.js; mocha --watch 'test/**/*.js'",
+    "coverage": "webpack --config webpack.test.js; nyc --reporter=text mocha 'test/**/*.js'",
+    "coverage:html": "webpack --config webpack.test.js; nyc --reporter=html mocha 'test/**/*.js'"
   },
   "nyc": {
     "sourceMap": true
