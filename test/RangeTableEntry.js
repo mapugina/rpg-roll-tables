@@ -8,7 +8,7 @@ const DESCRIPTION = 'A roll was made';
 
 describe('RangeTableEntry', function () {
   let r;
-  before(() => {
+  beforeEach(() => {
     r = new RangeTableEntry(MIN, MAX, DESCRIPTION);
   })
 

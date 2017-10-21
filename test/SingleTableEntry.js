@@ -5,7 +5,7 @@ describe('SingleTableEntry', function () {
   let t;
   const ENTRY = 1
   const DESCRIPTION = 'A roll was made'
-  before(() => {
+  beforeEach(() => {
     t = new SingleTableEntry(ENTRY, DESCRIPTION)
   })
 
