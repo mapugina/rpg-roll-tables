@@ -26,6 +26,14 @@
   "nyc": {
     "sourceMap": true
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Michael Pugina",
+  "email": "mapugina@gmail.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapugina/rpg-roll-tables.git"
+  },
+  "engines": {
+    "node": "^6.11.2"
+  }
 }
