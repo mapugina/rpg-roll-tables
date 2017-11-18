@@ -1,4 +1,4 @@
-interface IRollLookup<T> {
+export interface IRollLookup<T> {
     (location: number): T
 }
 

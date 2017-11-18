@@ -1,4 +1,4 @@
-interface MatchingFunction {
+export interface MatchingFunction {
     (candidate: number): boolean
 }
 
